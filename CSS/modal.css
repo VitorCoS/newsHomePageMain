@@ -1,0 +1,79 @@
+#modal_complet{
+    top: -30px;
+    width: 100%;
+    height: calc(100vh + 30px);
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: end;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    
+}
+
+
+#modal_navigator {
+    align-self: flex-end;
+    width: 65%;
+    height: calc(100vh + 30px);
+    background-color: var(--Off-white);
+    padding: 60px 30px 30px 30px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  
+
+
+}
+
+.transition-go {
+
+    transition: transform 1.5s ease;
+    transform: translateX(0);
+
+}
+
+.transition-back {
+
+    transform: translateX(0);
+
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.transition-create {
+    animation-name: slideIn;
+}
+
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.transition-erase {
+    animation-name: slideOut;
+}
+
+
+
+
+#img_close {
+    float: right;
+    clear: both;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>Frontend Mentor | News homepage</title>
+</head>
+
+
+<body >
+  
+
+
+    <header id="header">
+        <img src="./assets/Used-Images/logo.svg" alt="Logo-image">
+        <picture>
+          <source media="(min-width: 620px)" >
+              <img id="main_img3" onclick="create()" class="hamburguer" src="./assets/Used-Images/icon-menu.svg" alt="Imagem Responsiva">
+  
+            </picture>
+         
+      <nav>
+        <ul id="list-nav">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="main-container">
+       <article>
+        <img id="main_img" src="./assets/Used-Images/image-web-3-desktop.jpg" alt="main-img">
+        <picture>
+        <source media="(min-width: 620px)" >
+            <img id="main_img2"src="./assets/Used-Images/image-web-3-mobile.jpg" alt="Imagem Responsiva">
+
+          </picture>
+        <div id="content_below_image">
+        <h1>The Bright Future of Web 3.0?  
+        </h1>
+        <section>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+            <button>READ MORE</button>
+        </section>
+        </div>
+       </article> 
+
+       
+
+
+       <aside>
+        <h1 id="aside-title">New</h1>
+        
+        <div class="aside-topics-container">
+        <div class="aside-topic margin-down">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <h5>Will hydrogen-fueled cars ever catch up to EVs?</h5>
+        </div>
+
+        <div class="aside-topic margin-down">
+            <h3>The Downsides of AI Artistry</h3>
+            <h5>What are the possible adverse effects of on-demand AI image generation?</h5>
+          </div>
+
+          <div class="aside-topic">
+            <h3>Is VC Funding Drying Up?</h3>
+            <h5>Private funding by VC firms is down 50% YOY. We take a look at what that means.</h5>
+          </div>
+        </div>
+        <style>
+            div>aside{
+                color: white;
+            }
+        </style>
+       </aside>
+
+
+    </div>
+
+    <section>
+
+        <div class="conteudo_div">
+            <img class="imgs_article" src="./assets/Used-Images/image-retro-pcs.jpg" alt="img-article1">
+            <div class="conteudo_div_below_single">
+                <h1>01</h1>
+                <h2>Reviving Retro PCs</h2>
+                <h3>What happens when old PCs are given modern upgrades?</h3>
+            </div>
+        </div>
+
+        <div class="conteudo_div">
+          <img class="imgs_article" src="./assets/Used-Images/image-top-laptops.jpg" alt="img-article2">
+          <div class="conteudo_div_below_single">
+              <h1>02</h1>
+              <h2>Top 10 Laptops of 2023</h2>
+              <h3>Our best picks for various needs and budgets.</h3>
+          </div>
+      </div>
+
+      <div class="conteudo_div">
+        <img class="imgs_article" src="./assets/Used-Images/image-gaming-growth.jpg" alt="img-article3">
+        <div class="conteudo_div_below_single">
+            <h1>03</h1>
+            <h2>The Growth of Gaming</h2>
+            <h3>How the pandemic has sparked fresh opportunities.</h3>
+        </div>
+    </div>
+   
+       </section>
+<script src="./JavaScript/main.js"></script>
+
+
+</body>
+</html>
